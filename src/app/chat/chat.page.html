@@ -1,8 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      <div><th><ion-icon name="chevron-back-outline"></ion-icon></th><th> <img  src="assets/images/mcar.jpg"  alt="mcar" weight="30" height="30"></th><th><p align="right"> Admin  </p></th> </div>
-      </ion-title>
+    <ion-button slot="start">
+      <ion-back-button text="" color="light" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-button>
+    <ion-title color="light"></ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,6 +14,6 @@
     <input type="text" name="message" class="message">
     <ion-icon name="images-outline" color="white">cart</ion-icon>
   </div>
-</ion-card> 
+</ion-card>
 </ion-tab-button>
 </ion-content>
