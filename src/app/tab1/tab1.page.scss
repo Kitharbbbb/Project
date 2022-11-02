@@ -1,14 +1,19 @@
 ion-content {
     --background: #000000;
-    --ion-text-color:white;
+  }
+p.body{
+    --ion-text-color:black;
   }
   ion-toolbar {
     --background: #F10E00;
   }
 
+<<<<<<< HEAD
   ion-title{
       display: flex;
       flex-direction: column;
       align-items: center;
 
   }
+=======
+>>>>>>> 11c81feb58bb627ede04e75e69a68b8d8aff608b
