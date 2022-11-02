@@ -15,6 +15,8 @@ export class Tab2Page implements OnInit {
   }
   gotoContactpage() {
     this.navCtrl.navigateForward('cart');
+  }
+  gotoContactpage1() {
     this.navCtrl.navigateForward('chat');
   }
 }
