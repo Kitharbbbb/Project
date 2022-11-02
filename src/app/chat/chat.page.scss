@@ -9,5 +9,11 @@ ion-tab-button{
   --background:#F10E00;
 }
 ion-card {
-  --background: #ffffff;
+  --background: #000000;
+}
+input.message{
+  position: button;
+  top: 50px;
+  border-style: solid;
+  border-color: white;
 }
