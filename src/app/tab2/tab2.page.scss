@@ -1,9 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
 ion-content {
   --background: #000000;
-  --position: center;
   --ion-text-color:white;
-  gap: auto;
+  gap: 10%;
 }
+#flexbox {
+  display: grid;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 20px 5px;
+  padding-left: 20px;
+}
+
+#flexbox > div {
+  flex: 1 1 auto;
+  width: 100px;
+  height: 50px;
+}
+
 ion-toolbar {
   --background: #F10E00;
 }
