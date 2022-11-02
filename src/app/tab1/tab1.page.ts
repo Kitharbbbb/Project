@@ -9,14 +9,15 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab1Page implements OnInit {
 
-  constructor(private navCtrl: NavController){}
-  ngOnInit()
-   {
+  constructor(private navCtrl: NavController) { }
+  ngOnInit() {
 
   }
   gotoContactpage() {
     this.navCtrl.navigateForward('cart');
-    this.navCtrl.navigateForward('chat');
   }
-  
+  gotoContactpage1() {
+    this.navCtrl.navigateForward('chat');
+
+  }
 }

@@ -1,10 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-card-content>
-      <input type="text" name="serch"><ion-icon name="search-outline"></ion-icon></ion-card-content>
-      <ion-icon (click)="gotoContactpage()"name="cart-outline" color="Red">cart</ion-icon>
-      <ion-icon (click)="gotoContactpage()"name="chatbubbles-outline" color="Red">chat</ion-icon>
+      <ion-row>
+        <ion-col size="3">
+          <input type="text" name="serch" size="small">
+          <ion-icon (click)="gotoContactpage()"fill="clear" color="dark" name="cart-sharp"></ion-icon>
+          <ion-icon (click)="gotoContactpage1()"fill="clear" color="dark"name="chatbubbles-sharp"></ion-icon>
+        </ion-col>
+      </ion-row>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,6 +18,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-content >
+    <ion-row>
     <ion-card  weight="100" height >
       <div align="center">
         <h1 >WWork S1 </h1>
@@ -22,8 +26,8 @@
         <p align="left">WWork S1 </p> <p align="right" >40,000 B.</p>
         <p> W WOR K S1 DS021 ขอบ </p><p>15นิ้ว สีHyper Silver ขอบเงา</p>
 
-    </div> 
-    
+    </div>
+
     </ion-card>
     <ion-card  weight="100" height >
       <div align="center">
@@ -34,8 +38,8 @@
         <p align="left">แบบ : ปลายท่อแสตนเลส</p>
         <p align="left"> ขนาด กว้าง x ยาว : 5.6 x 8.9</p>
 
-    </div> 
-    
+    </div>
+
     </ion-card>
     <ion-card  weight="100" height >
       <div align="center">
@@ -46,9 +50,9 @@
         <p align="left"> แรงอัด	: 8.5:1</p>
         <p align="left"> แรงม้า	: 280/6800</p>
         <p align="left"> แรงบิด	: 340/4400</p>
-    </div> 
-    
-    </ion-card>
+    </div>
 
+    </ion-card>
+   </ion-row>
   </ion-content>
 </ion-content>
