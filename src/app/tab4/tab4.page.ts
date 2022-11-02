@@ -15,6 +15,17 @@ export class Tab4Page implements OnInit {
   }
   gotoContactpage() {
     this.navCtrl.navigateForward('cart');
+  }
+  gotoContactpage1() {
     this.navCtrl.navigateForward('chat');
+  }
+  gotoContactpage2() {
+    this.navCtrl.navigateForward('myorder');
+  }
+  gotoContactpage3() {
+    this.navCtrl.navigateForward('setup');
+  }
+  gotoContactpage4() {
+    this.navCtrl.navigateForward('h');
   }
 }

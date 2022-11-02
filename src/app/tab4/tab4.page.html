@@ -4,7 +4,7 @@
       <ion-card-content>
         <input type="text" id="serch"><ion-icon name="search-outline"></ion-icon></ion-card-content>
         <ion-icon (click)="gotoContactpage()"name="cart-outline" color="Red">cart</ion-icon>
-        <ion-icon (click)="gotoContactpage()"name="chatbubbles-outline" color="Red">chat</ion-icon>
+        <ion-icon (click)="gotoContactpage1()"name="chatbubbles-outline" color="Red">chat</ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,25 +16,25 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-  <div align="center">  
-    <img  src="assets/images/profile.png"  alt="Steering wheel" width="100" height="100">
-      <p align="center">Dominic Toretto</p>
+  <div  align="center">  
+    <img  src="assets/images/profile.png" alt="Steering wheel" width="100" height="100"  >
+      <p>Dominic Toretto</p>
   </div>
-  <ion-card class="1">
+  <ion-card class="1" (click)="gotoContactpage2()"name="myorder" >
     <div class="1">
     <th align="left"><p class="1" align="left">my order</p> 
     <th align="right"><ion-icon align="right" name="chevron-forward-outline" ></ion-icon></th>
 
     </div>
   </ion-card>
-  <ion-card class="1">
+  <ion-card class="1" (click)="gotoContactpage3()"name="setup">
     <div class="1">
     <th align="left"><p class="1" align="left">Set up</p> 
     <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
 
     </div>
   </ion-card>
-  <ion-card class="1">
+  <ion-card class="1" (click)="gotoContactpage4()"name="h">
     <div class="1">
     <th align="left"><p class="1" align="left">Help</p> 
     <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>

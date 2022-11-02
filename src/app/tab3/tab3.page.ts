@@ -13,8 +13,11 @@ export class Tab3Page implements OnInit {
    {
 
   }
-  gotoContactpage() {
-    this.navCtrl.navigateForward('cart');
-    this.navCtrl.navigateForward('chat');
-  }
+gotoContactpage() {
+  this.navCtrl.navigateForward('cart');
+}
+gotoContactpage1() {
+  this.navCtrl.navigateForward('chat');
+
+}
 }
