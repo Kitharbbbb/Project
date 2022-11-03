@@ -19,13 +19,13 @@ export class Tab4Page implements OnInit {
   gotoContactpage1() {
     this.navCtrl.navigateForward('chat');
   }
-  gotoContactpage2() {
+  gotoContactpagemyorder() {
     this.navCtrl.navigateForward('myorder');
   }
-  gotoContactpage3() {
+  gotoContactpagesetup() {
     this.navCtrl.navigateForward('setup');
   }
-  gotoContactpage4() {
+  gotoContactpageh() {
     this.navCtrl.navigateForward('h');
   }
 }

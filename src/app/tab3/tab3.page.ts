@@ -13,7 +13,6 @@ export class Tab3Page implements OnInit {
    {
 
   }
-<<<<<<< HEAD
   gotoContactpage() {
     this.navCtrl.navigateForward('cart');
   }
@@ -26,13 +25,4 @@ export class Tab3Page implements OnInit {
   gotoContactpage3() {
     this.navCtrl.navigateForward('plian');
   }
-=======
-gotoContactpage() {
-  this.navCtrl.navigateForward('cart');
-}
-gotoContactpage1() {
-  this.navCtrl.navigateForward('chat');
-
-}
->>>>>>> 64d7f90d12105036c6dd1705fd2af86d5bde6513
 }
