@@ -7,12 +7,19 @@ ion-content {
     --ion-text-color:white;
   }
 ion-tab-button{
-  --background:#F10E00;
+  --background:white;
 }
 ion-card {
   --background: #000000;
 }
 ion-tab-bar{
-  --background:rgb(124, 121, 121);
+  --background:rgb(172, 170, 170);
+  padding-top: 10%;
+  padding-bottom:30% ;
+
+}
+ion-tab-bar.p{
+  --ion-text-color:white;
+
 }
 
