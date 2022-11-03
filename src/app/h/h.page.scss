@@ -1,0 +1,25 @@
+ion-content {
+    --background: #000000;
+    --ion-text-color:white
+  }
+  ion-toolbar {
+    --background: #F10E00;
+    --ion-text-color:white;
+  }
+ion-tab-button{
+  --background:white;
+}
+ion-card {
+  --background: #000000;
+}
+ion-tab-bar{
+  --background:rgb(172, 170, 170);
+  padding-top: 10%;
+  padding-bottom:30% ;
+
+}
+ion-tab-bar.p{
+  --ion-text-color:white;
+
+}
+
