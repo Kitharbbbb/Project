@@ -13,16 +13,20 @@ export class Tab3Page implements OnInit {
    {
 
   }
+<<<<<<< HEAD
   gotoContactpage() {
+=======
+  gotoCart() {
+>>>>>>> f58853e31fde9e47e02dcc6d46b8a5927d9611ea
     this.navCtrl.navigateForward('cart');
   }
-  gotoContactpage1() {
+  gotoChat() {
     this.navCtrl.navigateForward('chat');
   }
-  gotoContactpage2() {
+  gotoCen() {
     this.navCtrl.navigateForward('cen');
   }
-  gotoContactpage3() {
+  gotoPlian() {
     this.navCtrl.navigateForward('plian');
   }
 }

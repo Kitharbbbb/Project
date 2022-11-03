@@ -12,8 +12,8 @@ export class CenPage implements OnInit {
   ngOnInit() {
   }
 
-  gotoContactpage3() {
-    this.navCtrl.navigateForward('chat');
+  gotoContactpage4() {
+    this.navCtrl.navigateForward('cenyes');
   }
 
 }
