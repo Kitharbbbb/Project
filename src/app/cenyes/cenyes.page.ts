@@ -11,8 +11,8 @@ export class CenyesPage implements OnInit {
 
   ngOnInit() {
   }
-  gotoBack5(){
-    this.navCtrl.navigateRoot('tab1');
+  gotoBackHome(){
+    this.navCtrl.navigateBack('tab1');
   }
 
 }
