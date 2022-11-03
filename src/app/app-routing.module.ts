@@ -2,23 +2,9 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-<<<<<<< HEAD
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-=======
-  {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
-    path: 'abouteme',
-    loadChildren: () => import('./abouteme/abouteme.module').then( m => m.AboutemePageModule)
-  },
-  {
-    path: 'mycontact',
-    loadChildren: () => import('./mycontact/mycontact.module').then( m => m.MycontactPageModule)
->>>>>>> f58853e31fde9e47e02dcc6d46b8a5927d9611ea
   },
   {
     path: 'cart',
@@ -35,30 +21,18 @@ const routes: Routes = [
   {
     path: 'cen',
     loadChildren: () => import('./cen/cen.module').then( m => m.CenPageModule)
-<<<<<<< HEAD
   },
   {
     path: 'plian',
     loadChildren: () => import('./plian/plian.module').then( m => m.PlianPageModule)
   },
   {
-    path: 'myorder',
-    loadChildren: () => import('./myorder/myorder.module').then( m => m.MyorderPageModule)
-=======
->>>>>>> f58853e31fde9e47e02dcc6d46b8a5927d9611ea
+    path: 'setup',
+    loadChildren: () => import('./setup/setup.module').then( m => m.SetupPageModule)
   },
   {
-    path: 'plian',
-    loadChildren: () => import('./plian/plian.module').then( m => m.PlianPageModule)
-  },
-  {
-<<<<<<< HEAD
     path: 'h',
     loadChildren: () => import('./h/h.module').then( m => m.HPageModule)
-=======
-    path: 'cenyes',
-    loadChildren: () => import('./cenyes/cenyes.module').then( m => m.CenyesPageModule)
->>>>>>> f58853e31fde9e47e02dcc6d46b8a5927d9611ea
   }
 
 ];
