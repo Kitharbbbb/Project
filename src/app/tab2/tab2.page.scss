@@ -6,21 +6,18 @@
 ion-content {
   --background: #000000;
   --ion-text-color:white;
-  gap: 10%;
 }
 #flexbox {
   display: grid;
-  flex-wrap: wrap;
-  width: 300px;
-  gap: 20px 5px;
-  padding-left: 20px;
+  height: 400px;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 20px 20px;
+  padding-left: 5%;
+  padding-top: 8% ;
+  padding-right: 5%;
 }
 
-#flexbox > div {
-  flex: 1 1 auto;
-  width: 100px;
-  height: 50px;
-}
+
 
 ion-toolbar {
   --background: #F10E00;
