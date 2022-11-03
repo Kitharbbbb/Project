@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-<<<<<<< HEAD
       <ion-row>
         <ion-col size="3">
           <input type="text" name="serch" size="small">
@@ -9,12 +8,6 @@
           <ion-icon (click)="gotoContactpage1()"fill="clear" color="dark"name="chatbubbles-sharp"></ion-icon>
         </ion-col>
       </ion-row>
-=======
-      <ion-card-content>
-        <input type="text" id="serch"><ion-icon name="search-outline"></ion-icon></ion-card-content>
-        <ion-icon (click)="gotoContactpage()"name="cart-outline" color="Red">cart</ion-icon>
-        <ion-icon (click)="gotoContactpage1()"name="chatbubbles-outline" color="Red">chat</ion-icon>
->>>>>>> 64d7f90d12105036c6dd1705fd2af86d5bde6513
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -26,42 +19,21 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-<<<<<<< HEAD
   <div align="center">
     <img  src="assets/images/profile.png"  alt="Steering wheel" width="100" height="100">
       <p align="center">Dominic Toretto</p>
-=======
-  <div  align="center">  
-    <img  src="assets/images/profile.png" alt="Steering wheel" width="100" height="100"  >
-      <p>Dominic Toretto</p>
->>>>>>> 64d7f90d12105036c6dd1705fd2af86d5bde6513
   </div>
   <ion-card class="1" (click)="gotoContactpage2()"name="myorder" >
     <div class="1">
-<<<<<<< HEAD
-    <th align="left"><p class="1" align="left">ตั้งค่าบัญชี</p>
-=======
-    <th align="left"><p class="1" align="left">my order</p> 
-    <th align="right"><ion-icon align="right" name="chevron-forward-outline" ></ion-icon></th>
-
-    </div>
-  </ion-card>
-  <ion-card class="1" (click)="gotoContactpage3()"name="setup">
-    <div class="1">
-    <th align="left"><p class="1" align="left">Set up</p> 
->>>>>>> 64d7f90d12105036c6dd1705fd2af86d5bde6513
+    <th align="left"><p (click)="gotoContactpage3()"class="1" align="left">ตั้งค่าบัญชี</p>
     <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
 
     </div>
   </ion-card>
-  <ion-card class="1" (click)="gotoContactpage4()"name="h">
+  <ion-card class="1" name="h">
     <div class="1">
-<<<<<<< HEAD
-    <th align="left"><p class="1" align="left">ศูนย์ช่วยเหลือ</p>
-=======
-    <th align="left"><p class="1" align="left">Help</p> 
->>>>>>> 64d7f90d12105036c6dd1705fd2af86d5bde6513
-    <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
+    <th align="left"><p  class="1" align="left">ศูนย์ช่วยเหลือ</p>
+    <th align="right"><ion-icon (click)="gotoContactpage4()"name="chevron-forward-outline"></ion-icon></th>
     </div>
   </ion-card>
 </ion-content>
