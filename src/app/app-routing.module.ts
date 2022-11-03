@@ -25,6 +25,18 @@ const routes: Routes = [
   {
     path: 'plian',
     loadChildren: () => import('./plian/plian.module').then( m => m.PlianPageModule)
+  },
+  {
+    path: 'myorder',
+    loadChildren: () => import('./myorder/myorder.module').then( m => m.MyorderPageModule)
+  },
+  {
+    path: 'setup',
+    loadChildren: () => import('./setup/setup.module').then( m => m.SetupPageModule)
+  },
+  {
+    path: 'h',
+    loadChildren: () => import('./h/h.module').then( m => m.HPageModule)
   }
 
 ];
