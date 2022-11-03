@@ -1,10 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-card-content>
-        <input type="text" id="serch"><ion-icon name="search-outline"></ion-icon></ion-card-content>
-        <ion-icon (click)="gotoContactpage()"name="cart-outline" color="Red">cart</ion-icon>
-        <ion-icon (click)="gotoContactpage()"name="chatbubbles-outline" color="Red">chat</ion-icon>
+      <ion-row>
+        <ion-col size="3">
+          <input type="text" name="serch" size="small">
+          <ion-icon (click)="gotoContactpage()"fill="clear" color="dark" name="cart-sharp"></ion-icon>
+          <ion-icon (click)="gotoContactpage1()"fill="clear" color="dark"name="chatbubbles-sharp"></ion-icon>
+        </ion-col>
+      </ion-row>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,27 +19,20 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-  <div align="center">  
+  <div align="center">
     <img  src="assets/images/profile.png"  alt="Steering wheel" width="100" height="100">
       <p align="center">Dominic Toretto</p>
   </div>
   <ion-card class="1">
     <div class="1">
-    <th align="left"><p class="1" align="left">การสั่งซื้อของฉัน</p> 
+    <th align="left"><p class="1" align="left">ตั้งค่าบัญชี</p>
     <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
 
     </div>
   </ion-card>
   <ion-card class="1">
     <div class="1">
-    <th align="left"><p class="1" align="left">ตั้งค่าบัญชี</p> 
-    <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
-
-    </div>
-  </ion-card>
-  <ion-card class="1">
-    <div class="1">
-    <th align="left"><p class="1" align="left">ศูนย์ช่วยเหลือ</p> 
+    <th align="left"><p class="1" align="left">ศูนย์ช่วยเหลือ</p>
     <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
     </div>
   </ion-card>

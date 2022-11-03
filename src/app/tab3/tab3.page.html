@@ -1,15 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-card-content>
-        <input type="text" id="serch"><ion-icon name="search-outline"></ion-icon></ion-card-content>
-        <ion-icon (click)="gotoContactpage()"name="cart-outline" color="Red">cart</ion-icon>
-        <ion-icon (click)="gotoContactpage()"name="chatbubbles-outline" color="Red">chat</ion-icon>
+      <ion-row>
+        <ion-col size="3">
+          <input type="text" name="serch" size="small">
+          <ion-icon (click)="gotoContactpage()"fill="clear" color="dark" name="cart-sharp"></ion-icon>
+          <ion-icon (click)="gotoContactpage1()"fill="clear" color="dark"name="chatbubbles-sharp"></ion-icon>
+        </ion-col>
+      </ion-row>
       </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div align="center">รายละเอียดการสั่งซื้อ</div>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Notification</ion-title>
@@ -21,6 +25,21 @@
   <th><p class="1">สวัสดีคร้าบบบบ</p>
     <p>aaaa</p>
 </th>
+<div align="right"><ion-button   (click)="gotoContactpage1()"fill="outline" color="light">ติดต่อผู้ขาย</ion-button><br></div>
+<div align="right"><ion-button   (click)="gotoContactpage3()"fill="outline" color="light">เปลี่ยนที่อยู่</ion-button><br></div>
+<div align="right"><ion-button   (click)="gotoContactpage2()"fill="outline" color="light">ยกเลิกการสั่งซื้อ</ion-button><br></div>
+  </div>
+</ion-card>
+<ion-card class="1">
+  <div class="1">
+    <th><img src="assets/images/WWorkS1.jpg" alt="WWorkS1" weight="80"height="80"></th>
+  <th>
+
+    <p>aaaa</p>
+</th>
+<div align="right"><ion-button   (click)="gotoContactpage1()"fill="outline" color="light">ติดต่อผู้ขาย</ion-button><br></div>
+<div align="right"><ion-button   (click)="gotoContactpage3()"fill="outline" color="light">เปลี่ยนที่อยู่</ion-button><br></div>
+<div align="right"><ion-button   (click)="gotoContactpage2()"fill="outline" color="light">ยกเลิกการสั่งซื้อ</ion-button><br></div>
   </div>
 </ion-card>
 </ion-content>
