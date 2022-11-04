@@ -11,16 +11,16 @@ export class Tab4Page implements OnInit {
   constructor(private navCtrl: NavController){}
   ngOnInit() {
   }
-  gotoContactpage() {
+  gotoCart() {
     this.navCtrl.navigateForward('cart');
   }
-  gotoContactpage1() {
+  gotoChat() {
     this.navCtrl.navigateForward('chat');
   }
-  gotoContactpagesetup() {
+  gotoSetup() {
     this.navCtrl.navigateForward('setup');
   }
-  gotoContactpageh() {
+  gotoH() {
     this.navCtrl.navigateForward('h');
   }
 }
