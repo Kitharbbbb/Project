@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.page.html',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailPage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor(private navCtrl: NavController){ }
+ngOnInit() {
+}
+gotoCart() {
+this.navCtrl.navigateForward('cart');
+}
 }
