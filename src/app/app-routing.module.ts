@@ -5,6 +5,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -82,7 +87,8 @@ const routes: Routes = [
   {
     path: 'confirmbuy',
     loadChildren: () => import('./confirmbuy/confirmbuy.module').then( m => m.ConfirmbuyPageModule)
-  },  {
+  },
+  {
     path: 'security',
     loadChildren: () => import('./security/security.module').then( m => m.SecurityPageModule)
   },
@@ -91,6 +97,7 @@ const routes: Routes = [
     loadChildren: () => import('./myadd/myadd.module').then( m => m.MyaddPageModule)
   },
   {
+<<<<<<< HEAD
     path: 'detailpuanmalai',
     loadChildren: () => import('./detailpuanmalai/detailpuanmalai.module').then( m => m.DetailpuanmalaiPageModule)
   },
@@ -104,3 +111,20 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+=======
+    path: 'logout',
+    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
+  },
+];
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+>>>>>>> 81e91a70a874f4f4e4665214898185cdc1437a98
