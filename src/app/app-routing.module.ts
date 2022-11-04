@@ -57,6 +57,26 @@ const routes: Routes = [
   {
     path: 'puanmalai',
     loadChildren: () => import('./puanmalai/puanmalai.module').then( m => m.PuanmalaiPageModule)
+  },
+  {
+    path: 'detail',
+    loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
+  },
+  {
+    path: 'detail2',
+    loadChildren: () => import('./detail2/detail2.module').then( m => m.Detail2PageModule)
+  },
+  {
+    path: 'detail3',
+    loadChildren: () => import('./detail3/detail3.module').then( m => m.Detail3PageModule)
+  },
+  {
+    path: 'detail4',
+    loadChildren: () => import('./detail4/detail4.module').then( m => m.Detail4PageModule)
+  },
+  {
+    path: 'detail5',
+    loadChildren: () => import('./detail5/detail5.module').then( m => m.Detail5PageModule)
   }
 
 
