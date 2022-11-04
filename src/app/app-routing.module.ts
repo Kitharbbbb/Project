@@ -5,6 +5,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -82,7 +87,8 @@ const routes: Routes = [
   {
     path: 'confirmbuy',
     loadChildren: () => import('./confirmbuy/confirmbuy.module').then( m => m.ConfirmbuyPageModule)
-  },  {
+  },
+  {
     path: 'security',
     loadChildren: () => import('./security/security.module').then( m => m.SecurityPageModule)
   },
@@ -90,8 +96,14 @@ const routes: Routes = [
     path: 'myadd',
     loadChildren: () => import('./myadd/myadd.module').then( m => m.MyaddPageModule)
   },
-
-
+  {
+    path: 'logout',
+    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
+  },
 ];
 @NgModule({
   imports: [

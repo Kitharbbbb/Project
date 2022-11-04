@@ -22,4 +22,7 @@ export class SetupPage implements OnInit {
   gotoSecurity() {
     this.navCtrl.navigateForward('security');
   }
+  gotoLogout() {
+    this.navCtrl.navigateForward('logout');
+  }
 }

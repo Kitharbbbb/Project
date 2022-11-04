@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-button class="1" slot="start" color="#F10E00">
-      <ion-back-button color="dark"><ion-icon></ion-icon></ion-back-button>
+      <ion-back-button color="dark"fill="clear" ></ion-back-button>
     </ion-button>
 
   </ion-toolbar>
@@ -23,5 +23,10 @@
     <th align="right"><ion-icon name="chevron-forward-outline"></ion-icon></th>
     </div>
   </ion-card>
+</ion-content>
+<ion-content align="center">
+  <ion-bottom>
+  <ion-button class="Bottom" (click)="gotoLogout()" name="logout" >ออกจากระบบ</ion-button>
+</ion-bottom>
 </ion-content>
 

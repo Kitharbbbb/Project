@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor(
+    private navCtrl: NavController){ }
+ngOnInit() {
+}
+gotoTab1() {
+this.navCtrl.navigateForward('tabs/tab1');
+}
 }
