@@ -82,7 +82,15 @@ const routes: Routes = [
   {
     path: 'confirmbuy',
     loadChildren: () => import('./confirmbuy/confirmbuy.module').then( m => m.ConfirmbuyPageModule)
+  },  {
+    path: 'security',
+    loadChildren: () => import('./security/security.module').then( m => m.SecurityPageModule)
   },
+  {
+    path: 'myadd',
+    loadChildren: () => import('./myadd/myadd.module').then( m => m.MyaddPageModule)
+  },
+
 
 ];
 @NgModule({

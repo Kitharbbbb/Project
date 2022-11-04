@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
 
-import { ConfirmbuyPageRoutingModule } from './confirmbuy-routing.module';
+import { SecurityPageRoutingModule } from './security-routing.module';
 
-import { ConfirmbuyPage } from './confirmbuy.page';
+import { SecurityPage } from './security.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConfirmbuyPageRoutingModule
+    SecurityPageRoutingModule
   ],
-  declarations: [ConfirmbuyPage]
+  declarations: [SecurityPage]
 })
-export class ConfirmbuyPageModule {}
+export class SecurityPageModule {}

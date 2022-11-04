@@ -9,9 +9,7 @@ import { NavController } from '@ionic/angular';
 export class Tab4Page implements OnInit {
 
   constructor(private navCtrl: NavController){}
-  ngOnInit()
-   {
-
+  ngOnInit() {
   }
   gotoContactpage() {
     this.navCtrl.navigateForward('cart');
