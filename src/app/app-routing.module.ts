@@ -97,7 +97,6 @@ const routes: Routes = [
     loadChildren: () => import('./myadd/myadd.module').then( m => m.MyaddPageModule)
   },
   {
-<<<<<<< HEAD
     path: 'detailpuanmalai',
     loadChildren: () => import('./detailpuanmalai/detailpuanmalai.module').then( m => m.DetailpuanmalaiPageModule)
   },
@@ -111,20 +110,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-=======
-    path: 'logout',
-    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
-  },
-  {
-    path: 'tab1',
-    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
-  },
-];
-@NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
->>>>>>> 81e91a70a874f4f4e4665214898185cdc1437a98
