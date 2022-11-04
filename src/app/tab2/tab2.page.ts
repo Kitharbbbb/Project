@@ -13,10 +13,25 @@ export class Tab2Page implements OnInit {
    {
 
   }
-  gotoContactpage() {
+  gotoCart() {
     this.navCtrl.navigateForward('cart');
   }
-  gotoContactpage1() {
+  gotoChat() {
     this.navCtrl.navigateForward('chat');
+  }
+  gotokreangyon() {
+    this.navCtrl.navigateForward('kreangyon');
+  }
+  gotolomax() {
+    this.navCtrl.navigateForward('lomax');
+  }
+  gotopuanmalai() {
+    this.navCtrl.navigateForward('puanmalai');
+  }
+  gototoaisia() {
+    this.navCtrl.navigateForward('toaisia');
+  }
+  gotoyang() {
+    this.navCtrl.navigateForward('yang');
   }
 }

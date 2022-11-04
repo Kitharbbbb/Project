@@ -12,7 +12,7 @@ export class CenyesPage implements OnInit {
   ngOnInit() {
   }
   gotoBackHome(){
-    this.navCtrl.navigateBack('tab1');
+    this.navCtrl.navigateBack('tabs/tab1');
   }
 
 }

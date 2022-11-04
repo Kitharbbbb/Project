@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-cen',
   templateUrl: './cen.page.html',
@@ -11,9 +12,9 @@ export class CenPage implements OnInit {
 
   ngOnInit() {
   }
-
-  gotoContactpage4() {
-    this.navCtrl.navigateForward('cenyes');
+  gotoCenyes() {
+    this.navCtrl.navigateBack('cenyes');
   }
+
 
 }

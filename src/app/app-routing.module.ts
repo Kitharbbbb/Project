@@ -1,3 +1,4 @@
+import { CenyesPage } from './cenyes/cenyes.page';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -31,9 +32,33 @@ const routes: Routes = [
     loadChildren: () => import('./setup/setup.module').then( m => m.SetupPageModule)
   },
   {
+    path: 'cenyes',
+    loadChildren: () => import('./cenyes/cenyes.module').then( m => m.CenyesPageModule)
+  },
+  {
     path: 'h',
     loadChildren: () => import('./h/h.module').then( m => m.HPageModule)
+  },  {
+    path: 'lomax',
+    loadChildren: () => import('./lomax/lomax.module').then( m => m.LomaxPageModule)
+  },
+  {
+    path: 'yang',
+    loadChildren: () => import('./yang/yang.module').then( m => m.YangPageModule)
+  },
+  {
+    path: 'toaisia',
+    loadChildren: () => import('./toaisia/toaisia.module').then( m => m.ToaisiaPageModule)
+  },
+  {
+    path: 'kreangyon',
+    loadChildren: () => import('./kreangyon/kreangyon.module').then( m => m.KreangyonPageModule)
+  },
+  {
+    path: 'puanmalai',
+    loadChildren: () => import('./puanmalai/puanmalai.module').then( m => m.PuanmalaiPageModule)
   }
+
 
 ];
 @NgModule({
