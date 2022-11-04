@@ -97,13 +97,11 @@ const routes: Routes = [
     loadChildren: () => import('./myadd/myadd.module').then( m => m.MyaddPageModule)
   },
   {
-    path: 'logout',
-    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
+    path: 'detailpuanmalai',
+    loadChildren: () => import('./detailpuanmalai/detailpuanmalai.module').then( m => m.DetailpuanmalaiPageModule)
   },
-  {
-    path: 'tab1',
-    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
-  },
+
+
 ];
 @NgModule({
   imports: [

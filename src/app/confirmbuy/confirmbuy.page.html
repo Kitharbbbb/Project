@@ -13,13 +13,13 @@
   </ion-header>
   <ion-header collapse="condense">
   </ion-header>
-<ion-card class="1">
+
+<ion-card class="1" *ngFor="let document of inbucket">
   <div align="center">รายละเอียดสินค้า</div><br>
   <div class="1">
-    <th><img src="assets/images/WWorkS1.jpg"  align="left" alt="WWorkS1" weight="80"height="80"></th>
-  <th>สี : โครเมี่ยม<br>
-    ขนาดขอบ : 18<br>
-    กว้าง : 9.5<br>
+    <th><img [src]="document.pic"  align="left" alt="WWorkS1" weight="80"height="80" /></th>
+    <h3>{{document.name}}</h3>
+  <th><h3>{{document.detail}}</h3><br>
     จำนวน : 1 ชุด
 </th><br>
 <th><img src="assets/images/SCB.png"  weight="80"height="80"></th>เลขบัญชี : 7043544896<br>
@@ -35,6 +35,21 @@
     <ion-label position="stacked">วันที่โอน</ion-label>
     <ion-input></ion-input>
   </ion-item>
+  <ion-item color="383737">
+    <ion-label position="stacked">ราคาที่โอน</ion-label>
+    <ion-input>{{document.price}}</ion-input>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <img>
+  <ion-header>
+      <ion-card-title></ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+  </ion-header>
+  <ion-card-content>
+    <ion-button></ion-button>
+  </ion-card-content>
 </ion-card>
 <ion-card>
   <ion-item color="383737">
