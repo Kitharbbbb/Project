@@ -57,6 +57,10 @@ const routes: Routes = [
   {
     path: 'puanmalai',
     loadChildren: () => import('./puanmalai/puanmalai.module').then( m => m.PuanmalaiPageModule)
+  },
+  {
+    path: 'confirmbuy',
+    loadChildren: () => import('./confirmbuy/confirmbuy.module').then( m => m.ConfirmbuyPageModule)
   }
 
 
