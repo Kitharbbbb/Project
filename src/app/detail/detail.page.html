@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-button slot="start" color="#F10E00">
-      <ion-back-button color="dark" fill="clear"></ion-back-button>
+         <ion-back-button color="dark" fill="clear"></ion-back-button>
     </ion-button>
     <ion-title></ion-title>
   </ion-toolbar>
@@ -12,16 +12,16 @@
   <ion-content class="body" >
     <ion-card  weight="100" height align="center">
       <div align="center">
-        <h1 >B.S.D. BBS</h1>
-      <img src="assets/images/B.S.D. BBS.jpg" alt="B.S.D. BBS">
-       <td align="left"><p align="left">MS                  40,000 B.</p> <p align="right" ></p>
-        <p align="left">พวงมาลัย : 3 ก้าน</p>
-        <p align="left">รอบวง : 14 นิ้ว</p>
-        <p align="left">ลาย : ลายไม้และเคฟล่า</p>
-        <p align="left">แบรนด ์: BBS</p>
+        <h1 >{{name}}</h1>
+      <img [src]="pic" />
+       <td align="left"><p align="left">MS                  {{price}} B.</p> <p align="right" ></p>
+        <p align="left">{{detail[0]}}</p>
+        <p align="left">{{detail[1]}}</p>
+        <p align="left">{{detail[2]}}</p>
+        <p align="left">{{detail[3]}}</p>
         <h1 align="right"><ion-icon name="cart-outline" ></ion-icon></h1>
     </div>
     </ion-card>
-  </ion-content>
-</ion-content>
+    </ion-content>
+
 

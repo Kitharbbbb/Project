@@ -90,6 +90,10 @@ const routes: Routes = [
     path: 'myadd',
     loadChildren: () => import('./myadd/myadd.module').then( m => m.MyaddPageModule)
   },
+  {
+    path: 'detailpuanmalai',
+    loadChildren: () => import('./detailpuanmalai/detailpuanmalai.module').then( m => m.DetailpuanmalaiPageModule)
+  },
 
 
 ];
