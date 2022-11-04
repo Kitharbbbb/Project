@@ -38,7 +38,8 @@ const routes: Routes = [
   {
     path: 'h',
     loadChildren: () => import('./h/h.module').then( m => m.HPageModule)
-  },  {
+  },
+  {
     path: 'lomax',
     loadChildren: () => import('./lomax/lomax.module').then( m => m.LomaxPageModule)
   },
@@ -76,6 +77,10 @@ const routes: Routes = [
   },
   {
     path: 'detail5',
+    loadChildren: () => import('./detail5/detail5.module').then( m => m.Detail5PageModule)
+  },
+  {
+    path: 'confirmbuy',
     loadChildren: () => import('./detail5/detail5.module').then( m => m.Detail5PageModule)
   }
 
