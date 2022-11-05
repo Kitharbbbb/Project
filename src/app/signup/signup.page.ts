@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupPage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(
+    private navCtrl: NavController){ }
+ngOnInit() {
+}
+gotologin() {
+this.navCtrl.navigateForward('login');
+}
 
 }

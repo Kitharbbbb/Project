@@ -20,6 +20,4 @@ gotoSignup() {
 gotoForgot() {
   this.navCtrl.navigateForward('forgot');
   }
-    
-    
 }
