@@ -119,7 +119,11 @@ const routes: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },  {
+    path: 'forgot2',
+    loadChildren: () => import('./forgot2/forgot2.module').then( m => m.Forgot2PageModule)
   },
+
 
 
 
