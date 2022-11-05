@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 import { SharedataService } from './../services/sharedata.service';
+
 @Component({
   selector: 'app-confirmbuy',
   templateUrl: './confirmbuy.page.html',
@@ -14,8 +15,8 @@ export class ConfirmbuyPage implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
     private navCtrl: NavController, private shareDataServ: SharedataService) {
-  console.log(this.shareDataServ.getSharedData());
-  this.sum = this.shareDataServ.sum;
+    console.log(this.shareDataServ.getSharedData());
+    this.sum = this.shareDataServ.sum;
 
     this.num = this.inbucket.length;
     for (const i of this.inbucket) {
@@ -29,5 +30,7 @@ export class ConfirmbuyPage implements OnInit {
 
   ngOnInit() {
   }
-
+  gotoBuysucces() {
+    this.navCtrl.navigateForward('buysucces');
+  }
 }

@@ -20,7 +20,6 @@ export class CartPage implements OnInit {
   }
     gotodetail() {
       const detailpuanmalai = { name: 'MS', price: '40,000 B', };
-     
       this.navCtrl.navigateForward('detailpuanmalai');
     }
 

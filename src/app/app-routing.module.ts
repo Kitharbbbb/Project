@@ -100,6 +100,24 @@ const routes: Routes = [
     path: 'detailpuanmalai',
     loadChildren: () => import('./detailpuanmalai/detailpuanmalai.module').then( m => m.DetailpuanmalaiPageModule)
   },
+  {
+    path: 'buysucces',
+    loadChildren: () => import('./buysucces/buysucces.module').then( m => m.BuysuccesPageModule)
+  },
+  {
+    path: 'logout',
+    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
+  },
+  {
+    path: 'signin',
+    loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
+  },
+
+  {
+    path: 'forgotp',
+    loadChildren: () => import('./forgot-p/forgotp.module').then( m => m.ForgotpPageModule)
+  },
+
 
 
 ];

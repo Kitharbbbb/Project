@@ -1,6 +1,6 @@
 ion-content {
     --background: #000000;
-    --ion-text-color:rgb(255, 255, 255);
+    --ion-text-color:white;
     
   }
   ion-toolbar {
@@ -10,5 +10,10 @@ ion-content {
   }
 ion-tab-button{
   --background:#F10E00;
-  border-radius: 50px;
+}
+img{
+    padding-bottom: 15%;
+}
+.footer{
+    padding-bottom: 85%;
 }
