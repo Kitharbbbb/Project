@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { ForgotpPageRoutingModule } from './forgotp-routing.module';
-import { ForgotpPage } from './forgotp.page';
+
+import { ForgotPageRoutingModule } from './forgot-routing.module';
+
+import { ForgotPage } from './forgot.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ForgotpPageRoutingModule
+    ForgotPageRoutingModule
   ],
-  declarations: [ForgotpPage]
+  declarations: [ForgotPage]
 })
-export class ForgotpPageModule {}
+export class ForgotPageModule {}

@@ -29,14 +29,7 @@
   <ion-button class="login"expand="block" type="sumbit"(click)="gotoTab1()" >Login</ion-button>
 
 <div class="text2">
-  <ion-grid >
-    <a [routerLink]="['/Signup']">Sign up </a>
-
-  </ion-grid>
-
-  <ion-grid >
-    <a [routerLink]="['/forgetpassword']">Forgot Password?</a>
-  </ion-grid>
+  <p (click)="gotoSignup()">Sign up</p> <p (click)="gotoForgot()">Forgot Password</p>
 </div>
 </form>
 </div>

@@ -109,14 +109,19 @@ const routes: Routes = [
     loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
   },
   {
-    path: 'signin',
-    loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
+    path: 'forgot',
+    loadChildren: () => import('./forgot/forgot.module').then( m => m.ForgotPageModule)
+  },
+  {
+    path: 'forgot',
+    loadChildren: () => import('./forgot/forgot.module').then( m => m.ForgotPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
 
-  {
-    path: 'forgotp',
-    loadChildren: () => import('./forgot-p/forgotp.module').then( m => m.ForgotpPageModule)
-  },
+
 
 
 

@@ -14,4 +14,12 @@ ngOnInit() {
 gotoTab1() {
 this.navCtrl.navigateForward('tabs/tab1');
 }
+gotoSignup() {
+  this.navCtrl.navigateForward('signup');
+}
+gotoForgot() {
+  this.navCtrl.navigateForward('forgot');
+  }
+    
+    
 }
