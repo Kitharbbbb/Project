@@ -28,4 +28,4 @@ export class DetailPage implements OnInit {
     this.navCtrl.navigateForward('cart');
   }
 
-  }
+}
