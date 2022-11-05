@@ -22,7 +22,7 @@ export class Tab3Page implements OnInit {
   gotoCen() {
     this.navCtrl.navigateForward('cen');
   }
-  gotoPlian() {
-    this.navCtrl.navigateForward('plian');
+  gotoMyadd() {
+    this.navCtrl.navigateForward('myadd');
   }
 }
